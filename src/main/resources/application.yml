@@ -1,0 +1,23 @@
+# 冒号后面用空格，不然无法使用
+
+#表示使用哪个配置文件
+spring:
+    profiles:
+        active: dev
+
+
+#spring:
+#    profiles:
+#        active: ${IFW_ENV}
+
+server:
+    port: 1110
+    
+book:
+    name: SpringCloud
+    number: 随机字符串：${random.value} , 随机int：${random.int} , 随机long：${random.long} ,10以内随机数：${random.int(10)} ,10~20随机数：${random.int[10,20]}
+    desc: ${book.name} write by ${book.author}
+    
+
+
+    
