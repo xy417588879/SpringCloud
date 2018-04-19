@@ -1,14 +1,14 @@
 # 冒号后面用空格，不然无法使用
 
 #表示使用哪个配置文件
-spring:
-    profiles:
-        active: dev
-
-
 #spring:
 #    profiles:
-#        active: ${IFW_ENV}
+#        active: dev
+
+
+spring:
+    profiles:
+        active: ${IFW_ENV}
 
 server:
     port: 1110
